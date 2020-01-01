@@ -1,0 +1,119 @@
+.icon-bar {
+  margin-top: 100px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  border-top: solid darkgray 1px;
+  @media (max-width: 500px) {
+    margin-top: 60px;
+  }
+
+  display: flex;
+  justify-content: center;
+  i {
+    margin: 0 30px;
+    font-size: 3rem;
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.fa-twitter-square {
+  &:hover {
+    color: #429cd6;
+  }
+}
+.fa-instagram {
+  &:hover {
+    color: #8a3ab9;
+  }
+}
+.fa-facebook-square {
+  &:hover {
+    color: #3a589e;
+  }
+}
+.fa-youtube {
+  &:hover {
+    color: #cd1f28;
+  }
+}
+.footer-container {
+  background-color: @onyx;
+}
+.footer {
+  display: flex;
+  padding-bottom: 5px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .copyright {
+    padding-left: 10px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    @media (max-width: 500px) {
+      padding-top: 10px;
+    }
+    .logo {
+      font-family: @replate-font;
+      font-size: 2.8rem;
+      color: @platinum;
+      text-decoration: none;
+
+      i {
+        color: @satin-gold;
+      }
+      .fas {
+        margin-right: 5px;
+      }
+      &:hover {
+        color: @faded-onyx;
+        i {
+          color: @gold-faded;
+        }
+      }
+    }
+    p {
+      margin-top: 5px;
+      font-family: @nav-font;
+      font-size: 1.4rem;
+      color: @faded-onyx;
+    }
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin-right: 5px;
+    @media (max-width: 500px) {
+      display: block;
+      padding-bottom: 15px;
+    }
+
+    a {
+      font-family: @nav-font;
+      color: @platinum;
+      font-size: 1.6rem;
+      margin: 5px 10px;
+      text-decoration: none;
+      &:hover {
+        color: @accent-color;
+        padding-right: 10px;
+        border-right: 1px solid @satin-gold;
+        @media (max-width: 550px) {
+          padding: 0;
+          border-bottom: 1px solid @satin-gold;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

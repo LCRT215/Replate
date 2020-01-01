@@ -1,0 +1,182 @@
+.nav-bar {
+  display: flex;
+  padding-top: 10px;
+  // margin-bottom: 130px;
+  height: 60px;
+  justify-content: space-between;
+  background-color: @onyx;
+  @media (min-width: 1000px) {
+    width: 100%;
+  }
+  @media (max-width: 550px) {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    border-bottom: @accent-color-2 solid 1px;
+    flex-direction: column;
+    align-items: center;
+  }
+  i {
+    margin-right: 5px;
+    color: @satin-gold;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-family: @replate-font;
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: @platinum;
+    &:hover {
+      i {
+        color: @gold-faded;
+      }
+      color: @faded-onyx;
+    }
+
+    @media (max-width: 550px) {
+      margin-bottom: 10px;
+      font-size: 2.6rem;
+    }
+  }
+  .nav {
+    justify-content: flex-end;
+    padding-top: 10px;
+
+    a {
+      font-family: @nav-font;
+      color: @platinum;
+      font-size: 1.6rem;
+      margin-right: 10px;
+      margin-left: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: @faded-onyx;
+        padding-bottom: 5px;
+        border-bottom: solid @gold-faded 1px;
+      }
+      @media (max-width: 550px) {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
+
+  .signcontain {
+    color: white;
+    text-align: center;
+    background-color: #494d4f;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid @gold-faded 2px;
+    border-left: solid @gold-faded 2px;
+    font-size: 1.5rem;
+    font-family: @nav-font;
+    @media (max-width: 750px) {
+      width: 220px;
+      padding: 0;
+    }
+    @media (max-width: 650px) {
+      width: 400px;
+    }
+    @media (max-width: 500px) {
+      width: 500px;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: #8bd3c8;
+      font-size: 3rem;
+      padding-bottom: 20px;
+      @media (max-width: 750px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 650px) {
+        padding: 0;
+      }
+      @media (max-width: 650px) {
+        font-size: 3rem;
+      }
+    }
+    input {
+      margin-bottom: 15px;
+      font-family: @nav-font;
+      @media (max-width: 650px) {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 650px) {
+        margin-bottom: 10px;
+      }
+    }
+    // .submit {
+    //   margin-bottom: 40px;
+    // }
+  }
+}
+
+.dropdown2 {
+  .signcontain2 {
+    color: white;
+    text-align: center;
+    background-color: #494d4f;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid @gold-faded 2px;
+    border-left: solid @gold-faded 2px;
+    font-size: 1.5rem;
+    font-family: @nav-font;
+    @media (max-width: 750px) {
+      width: 220px;
+      padding: 0;
+    }
+    @media (max-width: 650px) {
+      width: 400px;
+    }
+    @media (max-width: 500px) {
+      width: 500px;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: #8bd3c8;
+      font-size: 3rem;
+      padding-bottom: 20px;
+      @media (max-width: 750px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 650px) {
+        padding: 0;
+      }
+      @media (max-width: 650px) {
+        font-size: 3rem;
+      }
+    }
+    input {
+      margin-bottom: 15px;
+      font-family: @nav-font;
+      @media (max-width: 650px) {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 650px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}
